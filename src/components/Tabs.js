@@ -3,7 +3,7 @@ import { useState } from "react";
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("About me");
   return (
-    <div className="relative mb-8 pt-2 bg-gray-600 rounded-xl h-1/3">
+    <div className="relative mb-8 pt-2 bg-gray-600 rounded-xl h-1/2">
       <div className="flex justify-between m-2 bg-black text-gray-300 rounded-2xl">
         <button
           className={`m-1 py-2 px-4 ${

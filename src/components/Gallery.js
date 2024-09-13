@@ -19,7 +19,7 @@ const Gallery = () => {
     document.getElementById("imageInput").click();
   };
   return (
-    <div className="relative bg-gray-600 rounded-xl h-1/3 pt-6">
+    <div className="relative bg-gray-600 rounded-xl h-1/2 pt-6">
       <div className="flex justify-between items-center mb-4 pl-8">
         <h2 className="bg-black text-white m-2 p-2 rounded-xl">Gallery</h2>
         <button
@@ -39,9 +39,9 @@ const Gallery = () => {
         />
       </div>
 
-      <div className="flex space-x-4 pl-8 overflow-x-scroll no-scrollbar">
+      <div className="flex space-x-4 pl-8 overflow-auto no-scrollbar">
         {images.map((image, index) => (
-          <div key={index} className="w-24 h-24 bg-gray-600">
+          <div key={index} className="w-28 h-28 bg-gray-600 flex-shrink-0">
             <img src={image} alt="imageeeee" className="w-full h-full object-cover rounded-xl"/>
           </div>
         ))}
