@@ -39,7 +39,7 @@ const Gallery = () => {
         />
       </div>
 
-      <div className="flex space-x-4 pl-8">
+      <div className="flex space-x-4 pl-8 overflow-x-scroll no-scrollbar">
         {images.map((image, index) => (
           <div key={index} className="w-24 h-24 bg-gray-600">
             <img src={image} alt="imageeeee" className="w-full h-full object-cover rounded-xl"/>

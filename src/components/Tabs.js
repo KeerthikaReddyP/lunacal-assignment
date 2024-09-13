@@ -31,7 +31,7 @@ const Tabs = () => {
         </button>
       </div>
 
-      <div className="p-4 overflow-auto max-h-40 bg-gray-600 rounded-xl text-gray-400">
+      <div className="p-4 overflow-auto no-scrollbar max-h-40 bg-gray-600 rounded-xl text-gray-400">
         {activeTab === "About me" && (
           <p>
             Hello! I’m Dave, your sales rep here from Salesforce. I’ve been
